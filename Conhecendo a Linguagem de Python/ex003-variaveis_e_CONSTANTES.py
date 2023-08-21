@@ -2,9 +2,7 @@ nome = "Guilherme"
 
 idade = 22
 
-nome = "Giovanna"
-
-idade = 25
+nome, idade = "Giovanna", 25
 
 print(nome, idade)
 
