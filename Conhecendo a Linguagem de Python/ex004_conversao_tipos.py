@@ -53,7 +53,7 @@ print(100 / 2)
 
 print('--------------')
 
-print(100 // 2)
+print(100 // 2) #divisão inteira
 
 
 
