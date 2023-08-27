@@ -1,3 +1,4 @@
+
 opcao_selecionada_pelo_usuario = int(input("Selecione uma opção: de 1 a 3: "))
 
 if (opcao_selecionada_pelo_usuario == 1):
@@ -14,7 +15,3 @@ else:
         #EndBlock
     #EndBlock
 #EndBlock
-
-'''
-
-'''
