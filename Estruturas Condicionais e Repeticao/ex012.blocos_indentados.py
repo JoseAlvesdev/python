@@ -6,8 +6,8 @@ def sacar(valor: float):
         print("Retire seu dinheiro do caixa.")
     else:
         print("Saldo Insuficiente!")
-    print("Obrigado por ser nosso cliente, tenha um bom dia!")
-#:     
+
+    print("Obrigado por ser nosso cliente, tenha um bom dia!")     
 
 
 
