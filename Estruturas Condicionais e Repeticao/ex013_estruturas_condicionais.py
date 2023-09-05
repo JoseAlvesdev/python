@@ -11,7 +11,7 @@ else:
             print("OPÇÃO 3 SELECIONADA COM SUCESSSO!")
         else:
             print("OPÇÃO INVÁLIDA!")
-        #EndBlock
-        #EndBlock
-    #EndBlock
-#EndBlock
+        'end'
+        'end'
+    'end'
+'end'
