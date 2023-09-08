@@ -5,3 +5,6 @@ conjunto_a = conjunto_a.union(conjunto_b)
 
 print(conjunto_a)
 
+conjunto_c = set("abacaxi")
+
+print(conjunto_c)
