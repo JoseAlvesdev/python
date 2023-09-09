@@ -9,7 +9,7 @@ quadrado = []
 '''
 
 '''
-    for numero in numero:
+    for numero in numeros:
         quadrado.append(numero ** 2)
 '''
 
