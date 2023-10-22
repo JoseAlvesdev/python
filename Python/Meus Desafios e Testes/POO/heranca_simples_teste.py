@@ -16,8 +16,19 @@ class Computador:
         self.memoria_ram = memoria_ram
         self.motherboard = motherboard
 
+    def ligar_pc(self):
+        print('Ligando o PC...')
+        print('Pc ligado!')
+
+    def desligar_pc(self):
+        print('Desligando o PC...')
+        print('PC desligado!')
+
     def __str__(self):
-        return f"{self.__class__.__name__}: {', '.join([f'{chave}={valor}' for chave, valor in self.__dict__.items()])}"
+        return (
+            f"{self.__class__.__name__}: "
+            f"{', '.join([f'{chave}={valor}' for chave, valor in self.__dict__.items()])}"
+        )
     
 
 class MeuSetup(Computador):
@@ -40,3 +51,4 @@ MeuSetup = MeuSetup(
 )
 
 print(MeuSetup)
+#MeuSetup.desligar_pc()
