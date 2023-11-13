@@ -1,4 +1,8 @@
-class Passaro:
+from abc import ABC, abstractmethod
+
+
+class Passaro(ABC):
+    @abstractmethod
     def voar(self):
         print("Voando...")
 
