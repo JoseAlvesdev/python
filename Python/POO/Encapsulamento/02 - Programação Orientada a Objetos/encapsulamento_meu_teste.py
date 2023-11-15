@@ -8,7 +8,7 @@ class Funcionario:
 
     @property
     def salario(self):
-        return self._salario or self._salario
+        return self._salario or 0
     
     @salario.setter
     def salario(self, gorgeta):
