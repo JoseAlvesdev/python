@@ -1,0 +1,7 @@
+"""
+List Comprehension
+
+
+"""
+
+numeros = 
