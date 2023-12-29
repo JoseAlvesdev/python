@@ -1,7 +1,7 @@
 """
 Set Comprehension
-"""
 
+# Meu exemplo
 numeros = {numero for numero in range(0, 11)}
 keys = ['pares', 'impares']
 
@@ -10,6 +10,19 @@ filter = {
     keys[1]: {numero for numero in numeros if numero % 2}
 }
 
+# Exemplos
+numeros = set(range(1, 11))
+print(numeros)
 
-conjunto = {1, '2', 3, 4, '2', '3', 5, 6, 6, '9'}
-print(conjunto) # {1, 3, 4, 5, 6, '2', '3'}
+numeros = {num ** 2 for num in range(10)}
+print(numeros)
+
+# DESAFIO! Faça uma alteração na estrutura acima para gerar um dicionário ao invés de set.
+
+numeros = {'numeros': {num ** 2 for num in range(10)}}
+print(numeros)
+
+# DESAFIO!
+letras = {letra for letra in 'Geek University'}
+print(letras)
+"""
