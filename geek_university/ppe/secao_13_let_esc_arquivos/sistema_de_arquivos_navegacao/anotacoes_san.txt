@@ -1,0 +1,7 @@
+path == 'caminho'
+
+path Absoluto -> /python/exercicios/ex001.python
+path Relativo -> /python/../
+
+.. Move um diretório acima na hierarquia
+. Nesta pasta (local)
