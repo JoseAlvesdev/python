@@ -72,27 +72,46 @@ print(hoje)
 hoje_formatado = hoje.strftime('%d/%m/%Y')
 
 print(hoje_formatado)
+
+def formata_data(data):
+
+    match data.month:
+        case 1:
+            return f'{data.day} de Janeiro de {data.year}'
+        case 2:
+            return f'{data.day} de Fevereiro de {data.year}'
+        case 3:
+            return f'{data.day} de Março de {data.year}'
+        case 4:
+            return f'{data.day} de Abril de {data.year}'
+        case 5:
+            return f'{data.day} de Maio de {data.year}'
+        case 6:
+            return f'{data.day} de Junho de {data.year}'
+        case 7:
+            return f'{data.day} de Julho de {data.year}'
+        case 8:
+            return f'{data.day} de Agosto de {data.year}'
+        case 9:
+            return f'{data.day} de Setembro de {data.year}'
+        case 10:
+            return f'{data.day} de Outubro de {data.year}'
+        case 11:
+            return f'{data.day} de Novembro de {data.year}'
+        case 12:
+            return f'{data.day} de Dezembro de {data.year}'
 """
 
 import datetime
+from textblob import Word
 
 
-# Formatando datas/horas com strftime() (String Format Time)
-# dd/mm/yyyy hora:minuto
+def formata_data(data):
+    return f"{data.day} de {Word(data.strftime('%B'))} de {data.year}"
+
+
+
 
 hoje = datetime.datetime.today()
 
-print(hoje)
-
-# ANO
-# y minúsculo mostra o ano somente com 2 dígitos
-
-# MÊS
-# B maiúsculo mostra o nome do mês em inglês
-# b minúsculo mostra as 3 primeiras letras iniciais do mês
-
-# Consultar: https://docs.python.org/3/library/datetime.html
-
-hoje_formatado = hoje.strftime('%d de %B de %Y')
-
-print(hoje_formatado)
+print(formata_data(hoje))
