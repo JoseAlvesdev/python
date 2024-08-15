@@ -100,18 +100,61 @@ def formata_data(data):
             return f'{data.day} de Novembro de {data.year}'
         case 12:
             return f'{data.day} de Dezembro de {data.year}'
-"""
+
+# Função refatorada.
 
 import datetime
-from textblob import Word
+from deep_translator import GoogleTranslator
 
 
 def formata_data(data):
-    return f"{data.day} de {Word(data.strftime('%B'))} de {data.year}"
-
-
-
+    return f"{data.day} de {GoogleTranslator(target='pt').translate(data.strftime('%B'))} de {data.year}"
 
 hoje = datetime.datetime.today()
 
 print(formata_data(hoje))
+
+nascimento = datetime.datetime.strptime('11/05/2000', '%d/%m/%Y')
+
+print(nascimento)
+
+# Pegando uma string informada pelo usuário, e convertendo em um datetime
+# com o método strptime()
+
+nascimento = input('Qual sua data de nascimento? (dd/mm/yyyy): ')
+
+nascimento = datetime.datetime.strptime(nascimento, '%d/%m/%Y')
+
+print(nascimento)
+
+# Somente a hora
+
+almoco = datetime.time(12, 30, 0)
+
+print(almoco)
+
+# Marcando tempo de execução do nosso código com timeit
+
+# Loop for
+tempo = timeit.timeit('"-".join(str(n) for n in range(100))', number=10000)
+print(tempo)
+
+# List Comprehension
+tempo = timeit.timeit('"-".join([str(n) for n in range(100)])', number=10000)
+print(tempo)
+
+# Map
+tempo = timeit.timeit('"-".join(map(str, range(100)))', number=10000)
+print(tempo)
+"""
+
+import timeit, functools
+
+def teste(n):
+    soma = 0
+    for num in range(n * 200):
+        soma = soma + num ** num + 4
+    return soma
+
+
+print(timeit.timeit(functools.partial(teste, 2), number=10000))
