@@ -116,11 +116,40 @@ int, str, float, List, Set, Dict, etc...
 # print(outro)
 
 
-from typing import TypedDict
+# from typing import TypedDict
 
-class Routes(TypedDict):
-    rota1: str
-    rota2: str
+# class Routes(TypedDict):
+#     rota1: str
+#     rota2: str
 
 
-rotas: Routes = {'rota1': 'rota1', 'rota2': 1}
+# rotas: Routes = {'rota1': 'rota1', 'rota2': 1}
+
+# ==================================================
+# Protocols (como se fosse uma regra)
+
+from typing import Protocol
+
+
+class Curso(Protocol):
+    titulo: str
+
+    def __init__(self) -> None:
+        super().__init__()
+        Curso.titulo = 'Programação em Python'
+    
+
+def estudar(valor: Curso) -> None:
+    print(f'Estou estudando o curso {valor.titulo}')
+
+
+class Venda:
+    titulo = 'Oi'
+
+
+v1 = Venda()
+c1 = Curso()
+# c1.titulo = 'Programação em Python'
+
+estudar(c1)
+estudar(v1)
