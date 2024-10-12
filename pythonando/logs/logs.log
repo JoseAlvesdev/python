@@ -1,0 +1,14 @@
+DEBUG:root:Estou testando
+DEBUG:root:Estou testando
+CRITICAL:root:Senha do usuàrio foi exposta
+WARNING:root:Tentou dividir por zero
+WARNING:root:Tentou dividir por zero
+WARNING:root:Tentou dividir por zero
+WARNING:root:Tentou dividir por zero
+WARNING:2024-09-30 19:25:18,091:Tentou dividir por zero
+WARNING: 2024-09-30 19:26:35,021: Tentou dividir por zero
+WARNING: 2024-09-30 19:36:05,316: Tentou dividir por zero
+WARNING: 2024-09-30 19:48:28,979: Tentou dividir por zero
+WARNING: 2024-09-30 19:50:09,139: Tentou dividir por zero
+WARNING: 2024-09-30 19:51:22,835: Tentou dividir por zero
+WARNING: 2024-09-30 19:56:22,877: Tentou dividir por zero
