@@ -1,3 +1,9 @@
+"""
+Ah duas formas de comunicação entre processos
+    - Pipe -> Não tem possibilidade de realizar locks e unlocks
+    - Queue -> Possibilita a realização de locks e unlocks
+"""
+
 import multiprocessing
 
 def ping(queue):
